@@ -1,26 +1,17 @@
 {
-    "copy"           : "AppSeed", 
-    "email"          : "support@appseed.us",
+    "copy"           : "Tarnas",
+    "email"          : "tarnas14@gmail.com",
     "design"         : "Aerial by Html5 UP",
 
-    "app_title"      : "Eleventy Aerial",
+    "app_title"      : "Will code for skipass",
 
-    "seo_title"      : "Static Site Eleventy - HTML5up Aerial | AppSeed",
-    "seo_desc"       : "Static Site built with Eleventy (11ty) SSG on top of HTML5up Aerial design. Tooling: Webpack, Babel, LightServer and CSS processors.",
+    "seo_title"      : "WillCodeForSkipass - Mateusz Tarnaski's personal site, blog, something",
+    "seo_desc"       : "Personal site of one Tarnas (Mateusz Tarnaski). A software developer by choice, a snowboarder by heart. There might be content here one day. I write/rant [not] systematically about programming, snowboarding, self-improvement and so on.",
 
-    "product"        : "https://appseed.us/static-site/eleventy-html5up-aerial", 
-    "github"         : "https://github.com/app-generator/eleventy-html5up-aerial",
-    "github_group"   : "https://github.com/app-generator/static-site",
+    "product"        : "",
+    "github"         : "https://github.com/tarnas14",
 
-    "docs"           : "https://docs.appseed.us/apps/static-site/eleventy-html5up-aerial/",
-    "appseed"        : "https://appseed.us",      
-    "generator"      : "https://appseed.us/app-generator",
-    "blog"           : "https://blog.appseed.us/",
-    "facebook"       : "https://facebook.com/webappseed",
-    "twitter"        : "https://twitter.com/webappseed",
-    "instagram"      : "https://instagram.com/webappseed",
-    "support"        : "https://appseed.us/support",
-    "discord"        : "https://discord.gg/fZC6hup",
-
-    "LAST_KEY" : "NA"
+    "facebook"       : "https://facebook.com/tarnas14",
+    "twitter"        : "https://twitter.com/tarnas14",
+    "instagram"      : "https://instagram.com/tarnas14"
 }

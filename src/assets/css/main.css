@@ -99,7 +99,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #fff;
+    color: #2C2C34; /* background */
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 15pt;
 		font-weight: 300 !important;
@@ -226,7 +226,7 @@ input, select, textarea {
 		transform: translate3d(0,0,0);
 	/* Set your background with this */
 
-		background: #348cb2 url("images/bg.jpg") bottom left;
+		background: #f7f7f7 url("images/bg.jpg") bottom left;
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
@@ -553,6 +553,11 @@ input, select, textarea {
 		width: 90%;
 	}
 
+  #landing-photo {
+    max-height: 40vh;
+    max-width: 90vw;
+  }
+
 		#header h1 {
 			font-size: 4.35em;
 			font-weight: 900;
@@ -675,7 +680,7 @@ input, select, textarea {
 					-ms-transition: all 0.2s ease-in-out;
 					transition: all 0.2s ease-in-out;
 					border-radius: 100%;
-					border: solid 1px #fff;
+          border: solid 1px transparent;
 					display: block;
 					font-size: 1.75em;
 					height: 2.5em;
@@ -692,7 +697,8 @@ input, select, textarea {
 
 					#header nav a:hover:before {
 						background-color: rgba(255, 255, 255, 0.175);
-						color: #fff;
+						color: #2C2C34;
+					  border: solid 1px rgba(44,44,52, 0.5);
 					}
 
 				#header nav a:active {
@@ -702,7 +708,7 @@ input, select, textarea {
 
 					#header nav a:active:before {
 						background-color: rgba(255, 255, 255, 0.35);
-						color: #fff;
+						color: #2C2C34;
 					}
 
 				#header nav a span {
@@ -712,10 +718,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
-		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
+    opacity: .7;
 		bottom: 0;
 		cursor: default;
 		height: 6em;
@@ -1075,6 +1078,10 @@ input, select, textarea {
 		}
 
 	/* Header */
+
+  #landing-photo {
+    max-height: 50vh;
+  }
 
 		#header nav {
 			padding: 0 1em;

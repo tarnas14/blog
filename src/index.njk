@@ -9,18 +9,21 @@ layout : layouts/base.njk
 
 		<!-- Header -->
 		<header id="header">
+      <img src="/images/kon.png" id="landing-photo">
 			<h1>
-				<a href="{{ data.product }}" id="logo">{{ data.app_title }}</a>
+        {{ data.app_title }}
 			</h1>
 			<p>
-				<a href="https://appseed.us/static-site/">Static Site</a> prototyped in <a href="https://www.11ty.io/">Eleventy SSG</a> &nbsp;&bull;&nbsp; <a href="{{ data.github }}">{{ data.app_title }} Sources</a>	
+        Mateusz Tarnaski | Tarnas - software developer
+      </p>
+      <p>
+        One day there will be a blog here. Maybe project demos.<br/>Definitely snowboarding content.<br/>It will be awesome.
+      </p>
 			<nav>
 				<ul>
-
 					<li><a href="{{ data.github   }}" class="icon brands fa-github"><span class="label">Github</span></a></li>
-					<li><a href="{{ data.twitter  }}" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 					<li><a href="{{ data.facebook }}" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-
+					<li><a href="{{ data.instagram }}" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 				</ul>
 			</nav>
 		</header>
