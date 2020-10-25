@@ -1,6 +1,19 @@
 ---
-layout : layouts/base.njk
+layout : layouts/narrow.njk
 permalink: /blog/
+
 ---
 
-{% include 'posts.njk' %}
+<ul class="post-list">
+{% for post in collections.post | reverse %}
+  <li>
+    <span>
+      <a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+      {% for tag in post.data.tags %}
+        {% include 'tag.njk' %}
+      {% endfor %}
+    </span>
+    <time datetime="{{ post.date | htmlDateISOString }}">{{ post.date | htmlDateString }}</time>
+  </li>
+{% endfor %}
+</ul>

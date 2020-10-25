@@ -581,6 +581,17 @@ input, select, textarea {
     position: absolute;
   }
 
+main#content {
+  width: 100%;
+  max-width: 800px;
+  margin: 2em auto;
+}
+
+.post-list li {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Nav */
 
 body > nav {
@@ -607,49 +618,47 @@ nav > a#home {
 
 /* Post */
 
-body > article {
-  width: 100%;
-  max-width: 800px;
+article {
   text-align: justify;
-  margin: 2em auto;
+  width: 100%;
 }
 
-body > article > header {
+article > header {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
 }
 
-body > article img {
+article img {
   max-width: 100%;
 }
 
-body > article p {
+article p {
   margin: .8em 0;
 }
 
-body > article main {
+article main {
   margin-top: .5em;
 }
 
-body > article main::before {
+article main::before {
   content: "";
   display: block;
   width: 7em;
   border-top: .2em solid var(--font-colour);
 }
 
-body > article h1 {
+article h1 {
   font-size: 2em;
   margin-bottom: .5em;
 }
 
-body > article h2 {
+article h2 {
   font-size: 1.5em;
   margin-bottom: .75em;
 }
 
-body > article .tag {
+.tag {
   display: inline-block;
   padding: 0 0.6em;
   margin-right: .5em;
@@ -659,7 +668,7 @@ body > article .tag {
   border: 1px solid blue;
 }
 
-body > article time {
+time {
   font-style: italic;
   font-size: .9em;
 }
