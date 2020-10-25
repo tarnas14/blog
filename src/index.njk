@@ -3,31 +3,32 @@ layout : layouts/base.njk
 
 ---
 
-	<div id="main">
+<div id="wrapper">
 
-		<!-- Header -->
-		<header id="header">
+  <div id="main">
+
+    <!-- Header -->
+    <header id="header">
       <img src="/images/kon.png" id="landing-photo">
-			<h1>
+      <h1>
         {{ data.app_title }}
-			</h1>
-			<p>
+      </h1>
+      <p>
         Mateusz Tarnaski | Tarnas - software developer
       </p>
       <p>
         One day there will be a blog here. Maybe project demos.<br/>Definitely snowboarding content.<br/>It will be awesome.
       </p>
-			<nav>
-				<ul>
-					<li><a href="{{ data.github   }}" class="icon brands fa-github"><span class="label">Github</span></a></li>
-					<li><a href="{{ data.facebook }}" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-					<li><a href="{{ data.instagram }}" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-				</ul>
-			</nav>
-		</header>
+      <nav>
+        <ul>
+          <li><a href="{{ data.github   }}" class="icon brands fa-github"><span class="label">Github</span></a></li>
+          <li><a href="{{ data.facebook }}" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+          <li><a href="{{ data.instagram }}" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+        </ul>
+      </nav>
+    </header>
 
-		{% include 'footer.njk' %}
+  </div>
 
-	</div>
-
-
+  {% include 'footer.njk' %}
+</div>

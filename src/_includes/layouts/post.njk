@@ -1,0 +1,23 @@
+---
+layout : layouts/base.njk
+
+---
+
+{% include 'navigation.njk' %}
+
+<article>
+  <header>
+    <h1>this is a post</h1>
+    <time datetime="{{ date | htmlDateISOString }}">{{ date | htmlDateString }}</time>
+  </header>
+  <section class="tags">
+    {% for tag in tags %}
+      {% include 'tag.njk' %}
+    {% endfor %}
+  </section>
+  <main>
+    {{ content | safe }}
+  </main>
+</article>
+
+{% include 'footer.njk' %}
