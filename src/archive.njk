@@ -7,13 +7,18 @@ permalink: /blog/
 <ul class="post-list">
 {% for post in collections.post | reverse %}
   <li>
-    <span>
-      <a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+    <h1>
+    <a href="{{ post.url | url }}" style="font-size: 1.2em">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+    </h1>
+    <time datetime="{{ post.date | htmlDateISOString }}">{{ post.date | htmlDateString }}</time>
+    <p>
+      {{ post.data.description }}
+    </p>
+    <span style="margin-left: .3em">
       {% for tag in post.data.tags %}
         {% include 'tag.njk' %}
       {% endfor %}
     </span>
-    <time datetime="{{ post.date | htmlDateISOString }}">{{ post.date | htmlDateString }}</time>
   </li>
 {% endfor %}
 </ul>

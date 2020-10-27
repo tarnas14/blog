@@ -5,7 +5,7 @@ layout : layouts/narrow.njk
 
 <article>
   <header>
-    <h1>this is a post</h1>
+    <h1>{{ title }}</h1>
     <time datetime="{{ date | htmlDateISOString }}">{{ date | htmlDateString }}</time>
   </header>
   <section class="tags">
