@@ -169,80 +169,17 @@ input, select, textarea {
 			font-family: 'Font Awesome 5 Brands';
 		}
 
-/* Wrapper */
-
-	@-moz-keyframes wrapper {
-		0% {
-			opacity: 0;
-		}
-
-		100% {
-			opacity: 1;
-		}
-	}
-
-	@-webkit-keyframes wrapper {
-		0% {
-			opacity: 0;
-		}
-
-		100% {
-			opacity: 1;
-		}
-	}
-
-	@-ms-keyframes wrapper {
-		0% {
-			opacity: 0;
-		}
-
-		100% {
-			opacity: 1;
-		}
-	}
-
-	@keyframes wrapper {
-		0% {
-			opacity: 0;
-		}
-
-		100% {
-			opacity: 1;
-		}
-	}
-
-	#wrapper {
-		-moz-animation: wrapper 0.5s forwards;
-		-webkit-animation: wrapper 0.5s forwards;
-		-ms-animation: wrapper 0.5s forwards;
-		animation: wrapper 0.5s forwards;
-		height: 100%;
-		left: 0;
-		opacity: 0;
-		position: fixed;
-		top: 0;
-		width: 100%;
-	}
-
-/* Main */
+/* Main index */
 
 	#main {
-		height: 100%;
-		left: 0;
 		position: fixed;
-		text-align: center;
+		right: 0;
+		left: 0;
 		top: 0;
-		width: 100%;
+		bottom: 0;
+		display: flex;
+		flex-direction: column;
 	}
-
-		#main:before {
-			content: '';
-			display: inline-block;
-			height: 100%;
-			margin-right: 0;
-			vertical-align: middle;
-			width: 1px;
-		}
 
 /* Header */
 
@@ -404,13 +341,14 @@ input, select, textarea {
 		-ms-transform: translate3d(0,0,0);
 		transform: translate3d(0,0,0);
 		cursor: default;
-		display: inline-block;
 		opacity: 0;
-		position: relative;
 		text-align: center;
-		top: -1em;
-		vertical-align: middle;
-		width: 90%;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
 	}
 
   #landing-photo {
@@ -579,16 +517,13 @@ input, select, textarea {
 
 	#footer {
     opacity: .7;
+		font-size: .8em;
 		bottom: 0;
 		cursor: default;
 		left: 0;
 		text-align: center;
 		width: 100%;
 	}
-
-  #wrapper > #footer {
-    position: absolute;
-  }
 
 main#content {
   width: 100%;
@@ -810,5 +745,24 @@ time {
 
 		#header nav {
 			padding: 0 1em;
+			margin: 0;
+		}
+
+		#header nav li {
+			height: unset;
+			line-height: unset;
+		}
+
+    #header nav a:hover:before {
+      border: none;
+    }
+
+		#header nav a:before {
+			line-height: unset;
+      height: unset;
+		}
+
+		#footer {
+			font-size: 0.7em;
 		}
   }
