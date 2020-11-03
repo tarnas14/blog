@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "yarn dev",
+    "goprod": "yarn build && scp -r ./dist/* tarnas14@s43.mydevil.net:~/domains/willcodeforskipass.com/public_html",
     "deploy": "yarn build && node deploy",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf dist",
