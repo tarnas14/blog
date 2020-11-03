@@ -741,6 +741,9 @@ time {
 /* Mobile */
 
 	@media screen and (max-width: 736px) {
+    p code {
+      font-size: 1.1em;
+    }
 
 		/* Basic */
 
@@ -778,6 +781,10 @@ time {
 /* Mobile (Portrait) */
 
 	@media screen and (max-width: 480px) {
+
+    p code {
+      font-size: 1.1em;
+    }
 
 	/* Header */
 
