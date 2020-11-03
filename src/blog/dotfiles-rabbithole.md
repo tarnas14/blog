@@ -1,11 +1,11 @@
 ---
-title: I just wanted to write .NET Core code - evening of yak shaving
+title: I just wanted to write .NET Core code - an evening of yak shaving
 description: Have I just wasted 2h 15minutes of my life writing 2 lines of Dockerfile?
 date: 2020-11-03
 tags:
   - post
 layout: layouts/post.njk
-revisions: 1
+revisions: 2
 writingTime: 1h 20m
 author: Tarnas
 
