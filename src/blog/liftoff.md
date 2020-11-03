@@ -10,7 +10,7 @@ layout: layouts/post.njk
 
 Hi there, I'm Mateusz Tarnaski, most people call me Tarnas.
 
-I'm a professional web developer and an amateur snowboarder (in no particular order).
+I'm a web developer by trade and a snowboarder by heart.
 
 I finally bit the bullet and decided to start a blog (the one I'd been telling myself to start for some time now).
 
