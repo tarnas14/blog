@@ -4,6 +4,8 @@
 :root {
   --accent-colour-red: #d94146; /* redish */
   --accent-colour-blue: #003369; /* blueish */
+  --accent-colour-orange: rgb(240, 141, 73);; /* orange */
+  --accent-colour-violet: #8F00FF; /* purpleish */
   --font-colour: #2C2C34;
 }
 
@@ -16,7 +18,7 @@
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
-code, del, dfn, em, img, ins, kbd, q, s, samp,
+del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
 u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
@@ -30,6 +32,11 @@ section, summary, time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+}
+
+p code {
+  font-size: 1.1rem;
+  color: var(--accent-colour-orange);
 }
 
 strong {
@@ -126,7 +133,7 @@ input, select, textarea {
 		-webkit-transition: border-color 0.2s ease-in-out;
 		-ms-transition: border-color 0.2s ease-in-out;
 		transition: border-color 0.2s ease-in-out;
-		border-bottom: solid 1px;
+		border-bottom: dashed 1px;
     color: var(--accent-colour-blue);
 		outline: 0;
 		text-decoration: none;
@@ -134,7 +141,7 @@ input, select, textarea {
 
   a:hover {
     border-color: var(--accent-colour-red);
-		border-bottom: dashed 1px;
+		border-bottom: solid 1px;
   }
 
 /* Icon */
@@ -541,6 +548,7 @@ main#content {
 .post-list li h1 {
   font-size: 1.4em;
   margin-bottom: .2em;
+  text-align: center;
 }
 
 .post-list li p {
@@ -609,6 +617,11 @@ article > header {
   justify-content: space-between;
 }
 
+article > header > h1 {
+  flex: 1;
+  text-align: left;
+}
+
 article img {
   max-width: 100%;
 }
@@ -631,11 +644,15 @@ article main::before {
 article h1 {
   font-size: 2em;
   margin-bottom: .5em;
+  margin-top: .5em;
+  text-align: left;
 }
 
 article h2 {
   font-size: 1.5em;
   margin-bottom: .75em;
+  margin-top: .75em;
+  text-align: left;
 }
 
 .tag {
