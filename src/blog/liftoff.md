@@ -5,6 +5,9 @@ date: 2020-10-27
 tags:
   - post
 layout: layouts/post.njk
+revisions: 2
+writingTime: ??
+author: Tarnas
 
 ---
 
