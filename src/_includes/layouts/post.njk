@@ -16,4 +16,13 @@ layout : layouts/narrow.njk
   <main>
     {{ content | safe }}
   </main>
+  <footer>
+    <section id="meta">
+      <h3>post metadata</h3>
+      written in: <time>{{ writingTime }}</time><br/>
+      author: {{ author }}
+    </section>
+    <a href="/blog/" id="all-posts">all posts</a>
+  </footer>
 </article>
+

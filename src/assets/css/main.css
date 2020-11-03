@@ -587,8 +587,33 @@ nav > a#home {
 
 /* Post */
 
+#all-posts {
+  text-align: center;
+}
+
+article footer {
+  position: relative;
+  padding-top: .8em;
+  text-align: center;
+}
+
+article footer #meta {
+  text-align: right;
+  font-size: 0.75em;
+  line-height: 1.4em;
+}
+
+article footer:before {
+  content: "";
+  display: block;
+  width: 7em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-top: .2em solid var(--font-colour);
+}
+
 article {
-  text-align: justify;
   width: 100%;
 }
 
