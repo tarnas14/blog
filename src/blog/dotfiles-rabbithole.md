@@ -5,7 +5,7 @@ date: 2020-11-03
 tags:
   - post
 layout: layouts/post.njk
-revisions: 2
+revisions: 3
 writingTime: 1h 20m
 author: Tarnas
 
@@ -19,7 +19,7 @@ Sounds insane, I know, but hear me out.
 
 # Here is what happened:
 
-When I sat to write that sweet `.NET Core` code, I realized that I'd removed my `neovim` configuration for `OmniSharp` and I uninstalled `.NET Core` from my machine.
+When I sat to down write that sweet `.NET Core` code, I realized that I'd removed my `neovim` configuration for `OmniSharp` and I uninstalled `.NET Core` from my machine.
 
 Additionally, some time ago I made an attempt to dockerize my development environment, using an `arch-based` docker container (because I can).
 
