@@ -5,7 +5,7 @@ date: 2020-11-03
 tags:
   - post
 layout: layouts/post.njk
-revisions: 4
+revisions: 5
 writingTime: 1h 20m
 author: Tarnas
 
@@ -35,7 +35,8 @@ Not long ago I switched to `tsserver` for `JS` code analysis and that caused my 
 After I ~~googled~~ figured out [how to see vim-plug post-hook output](https://github.com/junegunn/vim-plug/issues/910), I found out that `npm` is not available during the post-hook.
 
 This got resolved "easily" by just sourcing `asdf` (which I use to install `node` and `npm`) inside the `init.vim`.
-(btw, I couldn't just do that in `init.vim`, because on host it would break the configuration, I had to replace some part of that file during docker image build, so I used `sed`)
+
+I couldn't just do that in `init.vim`, because on host it would break the configuration, I had to replace some part of config file during docker image build, so I used `sed`.
 
 ## at this point the image is building without errors
 
@@ -120,7 +121,7 @@ Most likely my solution isn't the best, the fastest or the most performant. It c
 
 And at the end of the day - that's what matters.
 
-## But I didn't solve the original problem
+## But I didn't solve the original problem, did I?
 
 I wanted to write `.NET Core` code and run into a big yak to shave.
 
