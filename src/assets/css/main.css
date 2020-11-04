@@ -593,6 +593,7 @@ nav > a#home {
 
 article footer {
   position: relative;
+  margin-top: 4em;
   padding-top: .8em;
   text-align: center;
 }
