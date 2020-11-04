@@ -41,6 +41,7 @@ p code {
 
 strong {
   font-weight: bold;
+  letter-spacing: 0.5px;
 }
 
 em {
