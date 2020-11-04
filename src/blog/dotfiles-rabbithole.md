@@ -76,7 +76,7 @@ asdf install nodejs 10.19.0
 ```
 and you're good to go.
 
-However, when you I tried to run that, `asdf-nodejs` package tried to make sure that it's downloading trusted `node` binaries etc. As you might've guessed, today that resulted in an error.
+However, when you I tried that, `asdf-nodejs` package tried to make sure that it's downloading trusted `node` binaries etc. As you might've guessed, that resulted in an error.
 ```bash
 Authenticity of checksum file can not be assured! [...]
 ```
@@ -99,7 +99,7 @@ My docker container with the newest `init.vim` configuration is now operational 
 This was a roller coaster of emotion, so I decided to write a 'short' post about it.
 (I've had a blog for almost a week, for crying out loud!).
 
-I'm now fixing some styling issues on the blog...
+I'm now fixing some styling on the blog...
 
 sigh...
 
