@@ -587,24 +587,20 @@ nav > a#home {
 
 /* Post */
 
-#all-posts {
+article footer {
   text-align: center;
 }
 
-article footer {
-  position: relative;
+article #meta {
   margin-top: 4em;
   padding-top: .8em;
-  text-align: center;
-}
-
-article footer #meta {
+  position: relative;
   text-align: right;
   font-size: 0.75em;
   line-height: 1.4em;
 }
 
-article footer:before {
+article #meta:before {
   content: "";
   display: block;
   width: 7em;
