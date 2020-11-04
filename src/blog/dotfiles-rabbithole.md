@@ -5,7 +5,7 @@ date: 2020-11-03
 tags:
   - post
 layout: layouts/post.njk
-revisions: 3
+revisions: 4
 writingTime: 1h 20m
 author: Tarnas
 
@@ -30,7 +30,7 @@ So, _obviously_, I decided to prepare a container for `.NET Core` development.
 I haven't used the dockerized `neovim` on a daily basis.
 It got stale.
 There were changes in my `init.vim` that I had not yet tested on the docker image.
-Not long ago I switched to `tsserver` to analyze code I write in `JS` and that caused my dev env docker image to fail on build.
+Not long ago I switched to `tsserver` for `JS` code analysis and that caused my dev env docker image to fail on build.
 
 After I ~~googled~~ figured out [how to see vim-plug post-hook output](https://github.com/junegunn/vim-plug/issues/910), I found out that `npm` is not available during the post-hook.
 
