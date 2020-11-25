@@ -5,7 +5,7 @@ date: 2020-11-18
 tags:
   - post
 layout: layouts/post.njk
-revisions: 1
+revisions: 2
 writingTime: 1h 28m
 author: Tarnas
 
@@ -41,7 +41,7 @@ Sure, for a couple months, pretty much half a year now it has been really stress
 The previous application we used fell apart, we couldn't deliver on time.
 At that point we partnered with <the company I work for> and we managed to rewrite and improve that application in a little bit over a year.
 
-That year our biggest client threatened to leave us and take away $39,000,000 yearly revenue.
+That year our biggest client threatened to leave us and take away `<insert lots of $$>` yearly revenue.
 *Now* they signed a contract for next year in advance and are bringing more companies (and more $$) to us, because they want to use our software.
 
 During the busiest critical time, we managed to gather user feedback and implement changes within a month, so they can verify them on actual production data.
