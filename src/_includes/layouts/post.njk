@@ -19,6 +19,9 @@ layout : layouts/narrow.njk
   <aside id="meta">
     written in: <time>{{ writingTime }}</time><br/>
     author: {{ author }}
+    <nav class="socials">
+      {% include 'socials.njk' %}
+    </nav>
   </aside>
   <footer>
     <a href="/blog/" id="all-posts">all posts</a>

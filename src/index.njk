@@ -17,12 +17,8 @@ layout : layouts/base.njk
       <p>
         <span style="text-decoration: line-through">One day</span> there <span style="text-decoration: line-through">will be</span> is a <a href="/blog/" class="accented">blog here.</a><br />Maybe project demos?<br/>Hopefully <em>some</em> snowboarding content in the future.<br/>It will be awesome.
       </p>
-      <nav>
-        <ul>
-          <li><a href="{{ data.github   }}" class="icon brands fa-github"><span class="label">Github</span></a></li>
-          <li><a href="{{ data.facebook }}" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-          <li><a href="{{ data.instagram }}" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-        </ul>
+      <nav class="socials animated">
+        {% include 'socials.njk' %}
       </nav>
     </header>
 
