@@ -380,6 +380,11 @@ input, select, textarea {
 
     aside nav.socials {
       margin: 0;
+      display: inline-block;
+    }
+
+    nav.socials ul {
+      padding-left: 0;
     }
 
     aside nav.socials li {
