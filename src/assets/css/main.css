@@ -571,7 +571,12 @@ main#content {
 
 .post-list li p {
   margin: .5em 0;
+  margin-bottom: 0;
   font-style: italic;
+}
+
+.post-list li time {
+  font-style: normal;
 }
 
 .post-list li .tag {
