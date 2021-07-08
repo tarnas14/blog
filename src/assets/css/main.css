@@ -596,7 +596,7 @@ main#content {
   font-style: normal;
 }
 
-.post-list li .tag {
+.post-list li span.tag {
   margin-right: 0;
 }
 
@@ -716,7 +716,12 @@ article h2 {
   text-align: left;
 }
 
-.tag {
+a.tag {
+  text-decoration: none;
+  border-bottom: 0;
+}
+
+span.tag {
   display: inline-block;
   padding: 0 0.6em;
   margin-right: .5em;
@@ -731,20 +736,18 @@ time {
   font-size: .9em;
 }
 
-/* .tag:hover { */
-  /* color: white; */
-  /* background-color: blue; */
-/* } */
-
-.tag.tag-journal {
+span.tag.tag-journal {
   color: var(--accent-colour-red);
   border: 1px solid var(--accent-colour-red);
 }
 
-/* .tag.tag-journal:hover { */
-  /* color: white; */
-  /* background-color: var(--accent-colour-blue); */
-/* } */
+span.tag:hover {
+  border-top-width: 2px;
+  border-right-width: 2px;
+  padding-top: .1em;
+  padding-right: .7em;
+  font-size: .9em;
+}
 
 @media screen and (max-width: 820px) {
   main#content, body > nav {

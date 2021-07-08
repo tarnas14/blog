@@ -1,0 +1,18 @@
+---
+layout : layouts/narrow.njk
+
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+permalink: /tag/{{ tag }}/
+---
+<h1>{% include 'tag.njk' %}</h1>
+<br/>
+
+<ul class="post-list">
+{% set taglist = collections[ tag ] %}
+{% for post in taglist | reverse %}
+  {% include 'postjist.njk' %}
+{% endfor %}
+</ul>

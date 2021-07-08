@@ -6,14 +6,6 @@ permalink: /blog/
 
 <ul class="post-list">
 {% for post in collections.post | reverse %}
-  <li>
-    <h1>
-    <a href="{{ post.url | url }}" style="font-size: 1.2em">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-    </h1>
-    <p>
-       {{ post.data.description }}
-    </p>
-    <time datetime="{{ post.data.date | htmlDateISOString }}">[{{ post.data.date | htmlDateString }}]</time>
-  </li>
+  {% include 'postjist.njk' %}
 {% endfor %}
 </ul>
