@@ -1,4 +1,5 @@
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const util = require('util');
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
@@ -10,6 +11,18 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addFilter("htmlDateISOString", (dateObj) => {
     return dateObj.toISOString();
+  });
+
+  eleventyConfig.addFilter("stringify", obj => {
+    return util.inspect(obj);
+  });
+
+  eleventyConfig.addFilter("series", (collection, series) => {
+    if (!series) {
+      return collection;
+    }
+
+    return collection.filter(item => item.data.series === series);
   });
 
   return {

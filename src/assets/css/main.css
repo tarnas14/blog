@@ -78,6 +78,35 @@ ol, ul {
 	list-style: none;
 }
 
+section.series {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 1em;
+  padding-top: 0;
+  background-color: #0000000d;
+  opacity: 0.8;
+  margin: 3em 0;
+}
+
+a.series {
+  font-size: .6em;
+  opacity: .8;
+}
+
+ol.series-list {
+  list-style: auto;
+  padding-left: 1em;
+}
+
+ol.series-list li {
+  padding-left: .5em;
+}
+
+.you-are-here {
+  display: inline-block;
+  margin-left: .5em;
+}
+
 blockquote, q {
 	quotes: none;
 }

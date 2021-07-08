@@ -5,6 +5,7 @@ date: 2021-06-18
 tags:
   - post
   - elixir
+series: learning-elixir
 layout: layouts/post.njk
 revisions: 1
 writingTime: 50m
@@ -48,7 +49,3 @@ So here goes a list of my thoughts on elixir/erlang in no particular order, whic
 * I'll build an api-first online game that programmers will write bots for and play against other programmers
 
 So there you go, I wrote it down, it's on the internet, see you in a while, hopefully with some elixir code and ponderings!
-
----
-
-here be the place for links of later parts of the elixir learning series

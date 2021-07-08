@@ -1,0 +1,9 @@
+<ol class="series-list">
+{% for post in collections.all | series(series) %}
+  <li>
+    <a href="{{ post.url | url }}" style="font-size: 1.2em">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+    <time datetime="{{ post.date | htmlDateISOString }}">[{{ post.date | htmlDateString }}]</time>
+    {% if post.data.title == title %}<span class="you-are-here"><-- you are here :)</span>{% endif %}
+  </li>
+{% endfor %}
+</ol>

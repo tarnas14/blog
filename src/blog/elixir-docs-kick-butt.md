@@ -5,6 +5,7 @@ date: 2021-07-08
 tags:
   - post
   - elixir
+series: learning-elixir
 layout: layouts/post.njk
 writingTime: 20m
 author: Tarnas

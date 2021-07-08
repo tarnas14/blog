@@ -5,7 +5,7 @@ layout : layouts/narrow.njk
 
 <article>
   <header>
-    <h1>{{ title }}</h1>
+    <h1>{{ title }} {%if series %}<a href="#series" class="series">(series)</a>{% endif %}</h1>
     <time datetime="{{ date | htmlDateISOString }}">{{ date | htmlDateString }}</time>
   </header>
   <section class="tags">
@@ -23,6 +23,12 @@ layout : layouts/narrow.njk
       {% include 'socials.njk' %}
     </nav>
   </aside>
+  {% if series %}
+    <section class="series" id="series">
+      <h2>This post is part of a series!</h2>
+      {% include 'serieslist.njk' %}
+    </section>
+  {% endif %}
   <footer>
     <a href="/blog/" id="all-posts">all posts</a>
   </footer>
