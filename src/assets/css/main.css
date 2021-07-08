@@ -34,6 +34,23 @@ section, summary, time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+main pre {
+  white-space: pre-wrap;
+  background-color: #ddd;
+  padding-left: .2em;
+  color: var(--accent-colour-orange);
+  counter-reset: line;
+}
+
+main pre.code-example code:before {
+  counter-increment: line;
+  content: counter(line) ".";
+  display: inline-block;
+  border-right: 1px solid #ddd;
+  margin-right: .5em;
+  color: #888
+}
+
 p code {
   font-size: 1.1rem;
   color: var(--accent-colour-orange);
